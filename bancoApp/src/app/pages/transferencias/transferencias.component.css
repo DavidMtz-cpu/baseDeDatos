@@ -1,0 +1,61 @@
+.card-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h5 {
+    margin: 10px;
+    font-size: 15px;
+};
+
+span {
+   background-color: #fff;
+}
+
+.sueldo {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    color: rgb(65, 141, 65);
+}
+
+.p-card .p-card-title {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.texto {
+    text-align: center;
+}
+
+.p-inputtext .p-component .p-element {
+    width: 90%;
+}
+
+.p-card-content {
+    width: 100%;
+}
+.inputs {
+    width: 90%;
+    text-align: center;
+}
+
+.boton {
+    margin: 10px;
+}
+
+hr {
+    margin: 0px;
+}
+
+.sueldo {
+    color: green;
+}
+
+span {
+    color: #ef9a9a;
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    font-size: 13px;
+}

@@ -1,0 +1,43 @@
+.card-mov {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.p-card .p-card-title {
+    text-align: center;
+}
+
+.movimientos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+h4 {
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+span {
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.boton-pdf {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+    color: white;
+}

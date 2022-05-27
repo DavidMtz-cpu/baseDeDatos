@@ -1,0 +1,93 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "password": "34w8gDLhes",
+      "nombre": "Angel David Martinez Cruz",
+      "direccion": "Venustiano Carranza #18",
+      "numTarjeta": "4216 6605 9856 5243",
+      "saldoDisponible": "$ 50.000"
+    },
+    {
+      "id": 2,
+      "password": "F6iuBw1Ehx",
+      "nombre": "Juan Pablo Hernandez Vazquez",
+      "direccion": "Ignacio Revueltas #18",
+      "numTarjeta": "4288 5168 0022 3469",
+      "saldoDisponible": "$ 34.000"
+    },
+    {
+      "id": 3,
+      "password": "kqDaMj9xQ9",
+      "nombre": "Alexis Daniel Rodriges Cruz",
+      "direccion": "El eden #144",
+      "numTarjeta": "5321 3441 2679 1590",
+      "saldoDisponible": "$ 23.000"
+    },
+    {
+      "id": 4,
+      "password": "834vgtoxVB",
+      "nombre": "Luis Fernando de la Garza Smit",
+      "direccion": "Polanco sec.12",
+      "numTarjeta": "4522 8927 2914 9210",
+      "saldoDisponible": "$ 40.000"
+    },
+    {
+      "id": 5,
+      "password": "k8Y1f00pYS",
+      "nombre": "Oliver Baena",
+      "direccion": "CALZADA DE LAS BOMBAS NO. 774 NO. 7,",
+      "numTarjeta": "4902 9962 2719 0931",
+      "saldoDisponible": "$ 1.000"
+    },
+    {
+      "id": 6,
+      "password": "4ukFxGh0Lj",
+      "nombre": "Jesus Rio",
+      "direccion": "Puerto Veracruz 715-B",
+      "numTarjeta": "5578 0667 9577 5552",
+      "saldoDisponible": "$ 7.000"
+    },
+    {
+      "id": 7,
+      "password": "1m0h4v2AXB",
+      "nombre": "Florencio Navarro",
+      "direccion": "HUMANISTA NO. 75, TAMPICO ALTAMIRA, 89609",
+      "numTarjeta": "5112 8791 4745 1158",
+      "saldoDisponible": "$ 16.000"
+    },
+    {
+      "id": 8,
+      "password": "67NY8bwU4P",
+      "nombre": "Antoni Calderon",
+      "direccion": "AGAPITO DOMINGUEZ NO. 30 S/N, GUAYABAL, 86090",
+      "numTarjeta": "3464 9186 4586 4003",
+      "saldoDisponible": "$ 2.000"
+    },
+    {
+      "id": 9,
+      "password": "nhGBstK89T",
+      "nombre": "Camilo Cabello",
+      "direccion": "RANCHO MAL PASO NO. 7449, PADRERA DORADA, 32000",
+      "numTarjeta": "3715 8632 6047 3201",
+      "saldoDisponible": "$ 47.000"
+    },
+    {
+      "id": 10,
+      "password": "MeNALdBjS5",
+      "nombre": "Adrian Ruano",
+      "direccion": "AV VENUSTIANO CARRANZA 990 NO. B-4, MODERNA",
+      "numTarjeta": "4706 8496 4812 7446",
+      "saldoDisponible": "$ 39.000"
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    }
+  ]
+}

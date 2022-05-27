@@ -1,0 +1,16 @@
+<div class="menu">
+    <p-tabMenu  [model]="items" [activeItem]="activeItem"></p-tabMenu >
+</div>
+<router-outlet></router-outlet>
+<div class="boton-logout">
+    <button (click)="confirmar()"
+            pButton 
+            pRipple 
+            type="button" 
+            label="Cerrar Sesion" 
+            class="p-button-danger p-button-text">
+    </button>
+</div>
+
+
+

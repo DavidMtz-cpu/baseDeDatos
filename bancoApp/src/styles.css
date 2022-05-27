@@ -1,0 +1,13 @@
+html,body {
+    font-family: var(--font-family);
+    background-color: var(--surface-b);
+}
+
+.text-layout {
+    color: var(--text-color);
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+    color: var(--text-color);
+    background-color: var(--surface-b);
+}

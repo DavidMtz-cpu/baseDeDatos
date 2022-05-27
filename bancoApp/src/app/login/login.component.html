@@ -1,0 +1,42 @@
+<div class="card-login">
+    <p-card class="texto" header="Banco De Mexico" [style]="{'width': '25rem'}">
+        <hr>
+        <form (ngSubmit)="guardar()" autocomplete="off" [formGroup]="miFormulario">
+            <div class="p-card-content">
+                <div>
+                    <h5>Id:</h5>
+                    <input  formControlName="id"
+                            maxlength="19"
+                            class="inputs" 
+                            type="text" 
+                            pInputText> 
+                    <br>
+                    <span *ngIf="campoValido('id')">
+                        id incorrecto
+                    </span>
+                </div>
+                <div>
+                    <h5>Contraseña:</h5>
+                    <input  formControlName="password"
+                            maxlength="13"
+                            class="inputs"
+                            type="password" 
+                            pInputText>
+                    <br>
+                    <span *ngIf="campoValido('password')">
+                        Contraseña Incorrecta
+                    </span>
+                </div>
+
+                <button
+                    pButton 
+                    pRipple 
+                    type="submit"
+                    label="Confirmar"
+                    class="p-button-success p-button-text boton">
+                </button>
+            </div>
+        </form>
+    </p-card>
+</div>
+<router-outlet></router-outlet>

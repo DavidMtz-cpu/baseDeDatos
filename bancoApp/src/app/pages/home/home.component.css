@@ -1,0 +1,34 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    width: 448px;
+}
+
+canvas {
+    color: text-layout;
+} 
+
+.boton-logout {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

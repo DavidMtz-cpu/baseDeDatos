@@ -1,0 +1,31 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+<div class="card-mov">
+    <p-card header="Ultimos Movimientos" [style]="{'width': '30rem', 'margin-bottom': '2em'}">
+        <div>
+            <div class="movimientos">
+                <h4>Mov</h4>
+                <h4>Fecha</h4>
+                <h4>Cantidad</h4>
+            </div>
+            <hr>
+            <div>
+                <div class="movimientos">
+                    <span>Transferencia</span>
+                    <span>02/08/04</span>
+                    <span>40,000</span>
+                </div>
+            </div>
+        </div>
+        <div class="boton-pdf">
+            <button (click)="pdf()"
+                    pButton 
+                    pRipple
+                    icon="pi pi-file-pdf"
+                    iconPos="right"
+                    type="button" 
+                    label="Descargar Pdf" 
+                    class="p-button-success p-button-text"></button>
+        </div>
+    </p-card>
+</div>

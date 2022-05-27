@@ -1,0 +1,39 @@
+<div class="card-login">
+    <p-card class="texto" header="Transferencias" [style]="{'width': '25rem'}">
+        <hr>
+        <div class="sueldo">
+            <span class="sueldo">Sueldo Disponible:50,000 </span>
+        </div>
+        <form (ngSubmit)="trans()" autocomplete="off" [formGroup]="miFormulario" >
+            <div class="p-card-content">
+                <h5>A Que Num. De Tarjeta:</h5>
+                <input formControlName="numTarjeta"
+                        class="inputs" 
+                        type="text" 
+                        pInputText
+                        maxlength="19">
+                <br>
+                <span *ngIf="campoValido('numTarjeta')">
+                    Numero de Tarjeta Invalido
+                </span>
+
+                <h5>{{'cantidad a depositar:' | titlecase }} </h5>
+                <input  formControlName="cantidad"
+                        class="inputs" 
+                        type="text" 
+                        pInputText > 
+                <br>
+                <span *ngIf="campoValido('cantidad')">
+                    No cuenta con esa cifra
+                </span>
+                <button 
+                        pButton 
+                        pRipple 
+                        type="submit" 
+                        label="Confirmar" 
+                        class="p-button-success p-button-text boton">
+                </button>
+            </div>
+        </form>
+    </p-card>
+</div>

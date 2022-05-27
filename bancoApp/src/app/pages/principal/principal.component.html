@@ -1,0 +1,21 @@
+<div class="cards">
+    <p-card header="Datos Personales" [style]="{'width': '28rem', 'margin-bottom': '2em'}">
+        <hr>
+        <div>
+            <h4>Nombre: <span>{{ usuario }}</span></h4>
+            <h4>Direccion: <span> {{ usuario  }} </span></h4>
+            <h4>Num. Tarjeta: <span> {{ usuario  }} </span></h4>
+            <h4>Saldo Disponible: <span> {{ usuario  }} </span></h4>
+        </div>
+    </p-card>
+
+    <p-card header="Grafica Ingresos Egresos" [style]="{'width': '28rem', 'margin-bottom': '2em'}">
+        <div style="display: block">
+            <canvas 
+            baseChart
+            [data]="barChartData"
+            [type]="barChartType">
+            </canvas>
+        </div>
+    </p-card>
+</div>
