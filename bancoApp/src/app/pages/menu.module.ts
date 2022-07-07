@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
+
+
+
 import { NgChartsModule } from 'ng2-charts';
 
 
@@ -15,7 +18,6 @@ import { UltimosMovComponent } from './ultimos-mov/ultimos-mov.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { RetirosComponent } from './retiros/retiros.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from '../login/login.component';
 
 const routes: Routes = [
   { 
@@ -51,7 +53,6 @@ const routes: Routes = [
     ReactiveFormsModule
   ],
   providers: [
-    LoginComponent
   ]
   
 })

@@ -9,4 +9,20 @@ router.get('/mensajes', ( req: Request, res: Response ) => {
     });
 });
 
+
+router.post('/mensajes/:id', ( req: Request, res: Response ) => {
+
+    //Lo que quiero rescatar del post
+    const cuerpo = req.body.cuerpo;
+    const de     = req.body.de;
+    const id     = req.params.id;
+    
+    res.json({
+        ok: true,
+        cuerpo,
+        de,
+        id
+    });
+});
+
 export default router

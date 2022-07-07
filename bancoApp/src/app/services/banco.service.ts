@@ -1,20 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable} from 'rxjs';
-import Swal from 'sweetalert2';
+import   Swal from 'sweetalert2';
 import { Usuario } from '../interface/interface';
+import { Socket } from 'ngx-socket-io';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BancoService {
 
-  constructor( private http: HttpClient ) {}
+  constructor( private http: HttpClient, ) {}
 
 
   signIn( id: number , password: string ): Observable<Usuario> {
-    const session = sessionStorage.setItem('id', id.toString(id) )
+    sessionStorage.setItem('id', id.toString(id) )
     console.log(sessionStorage)
+    console.log(id,password)
     if( !id && !password) {
       Swal.fire({
         title: 'Error!',
@@ -25,8 +27,7 @@ export class BancoService {
     }
     return this.http.get<Usuario[]>(`http://localhost:3000/usuarios?id=${id}&password=${password}`)
       .pipe(
-        map( users => users.find( u => u.id === id && u.password === password)!)
-      );
+        map( users => users.find( u => u.id === id && u.password === password)!),);
   };
 
   logout( id:number ): Observable<Usuario> {
@@ -38,7 +39,7 @@ export class BancoService {
   }
 
   getUserById( id: number ): Observable<Usuario> {
-    return this.http.get<Usuario[]>(`http://localhost:3000/usuarios?id=${id}`) 
+    return this.http.get<Usuario[]>(`http://localhost:3000/usuarios?id=1`) 
       .pipe(
         map( user => user.find( u => u.id === id)!),
       );

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { WebsocketService } from 'src/app/services/websocket.service';
 import Swal from 'sweetalert2';
 import { BancoService } from '../../services/banco.service';
 
@@ -20,7 +21,6 @@ export class HomeComponent implements OnInit {
 
 
   ngOnInit() {
-
     Swal.fire({
       title: 'Bienvenido',
       text: 'Bienvenido al banco mas seguro',
@@ -48,6 +48,5 @@ export class HomeComponent implements OnInit {
       cancelButtonColor: '#d33',
       confirmButtonText: '<a href="./login">Confirmar</a>'
     })
-    this.bancoService.logout
   }
 }

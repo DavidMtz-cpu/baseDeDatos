@@ -12,15 +12,14 @@ import { BancoService } from '../../services/banco.service';
 
 export class PrincipalComponent implements OnInit {
 
-  usuario!: Observable<Usuario> | Usuario
+  usuario!:  Usuario;
   Swal: any;
 
 
   constructor( private bancoService: BancoService,) {}
 
   ngOnInit(): void {
-    this.usuario = this.bancoService.getUserById
-    this.bancoService.signIn(this.usuario.id,this.usuario.password)
+    console.log(this.bancoService.getUserById(1))
   }
 
 
