@@ -1,6 +1,17 @@
 {
   "usuarios": [
     {
+      "id": 999999,
+      "accountNumber": "12345674",
+      "email": "email@loquesea.com",
+      "password": "34w8gDLhes",
+      "fullname": "Angel David Martinez Cruz",
+      "address": "Venustiano Carranza #18",
+      "cardNumber": "4216660598565243",
+      "balance": "50.000",
+      "currencyCode": "MXN"
+    },
+    {
       "id": 1,
       "password": "34w8gDLhes",
       "nombre": "Angel David Martinez Cruz",
