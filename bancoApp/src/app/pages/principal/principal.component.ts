@@ -19,7 +19,10 @@ export class PrincipalComponent implements OnInit {
   constructor( private bancoService: BancoService,) {}
 
   ngOnInit(): void {
-    console.log(this.bancoService.getUserById(1))
+    // // leer el localStorage
+    // const accountString = localStorage.getItem("user");
+    // const user = JSON.parse(accountString!);
+
   }
 
 

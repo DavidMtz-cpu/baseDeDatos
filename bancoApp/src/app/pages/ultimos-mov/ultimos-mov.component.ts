@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
+// @ts-ignore
+import { jsPDF } from 'jspdf';
 
 
 @Component({
@@ -10,16 +12,22 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class UltimosMovComponent implements OnInit {
+   @ViewChild('pdf', {static:true}) el!: ElementRef;
+
 
   constructor() {}
 
   ngOnInit(): void {
   }
 
-
-  pdf() {
-    console.log('descargando pdf');
-  }
+  createPdf() {
+    const doc = new jsPDF('p','pt','a4');
+    doc.html(this.el.nativeElement,{
+      callback:(pdf: { save: (arg0: string) => void; }) =>{
+        pdf.save("Ultimos Movimientos");
+      }
+    });
+  };
 
 }
 

@@ -21,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { 
-    path: '', 
+    path: '',
     component: HomeComponent,
     children:[
       { path: 'principal', component: PrincipalComponent },
@@ -30,9 +30,9 @@ const routes: Routes = [
       { path: 'ultimos-mov', component: UltimosMovComponent }
     ]
   },
-  { 
-    path: '**', 
-    redirectTo: '' 
+  {
+    path:'**',
+    redirectTo: ''
   }
 
 ];

@@ -26,42 +26,7 @@ export class TransferenciasComponent implements OnInit {
   };
 
   trans() {
-    const { numTarjeta, cantidad } = this.miFormulario.value;
-    this.bancoService.getUserByNumTarjetas(numTarjeta),
-    this.bancoService.getUserByBalance(cantidad)
-      .subscribe(
-        {
-          next: user => {
-            user = numTarjeta;
-            //Validacion campos vacios
-            if( !numTarjeta || !cantidad ) {
-              Swal.fire({
-                title: 'Error!',
-                text: 'Num de Tarjeta No Existe o No Cuenta con los Fondos',
-                icon: 'error',
-                confirmButtonText: 'Okey'
-              })
-            }
-            
-            // Validaciones Tarjeta
-            if ( !numTarjeta === !this.bancoService.getUserByNumTarjetas(numTarjeta) ) {
-              console.log('numero de tarjeta iguales')
-            }else {
-              console.log('num tarjeta no iguales')
-            }
-            console.log(numTarjeta,cantidad);
-
-            //Validaciones fondos
-
-            if ( this.bancoService.getUserByBalance < cantidad ) {
-              console.log('no cuenta con esa cantidad')
-            }else {
-              console.log('cuenta con el saldo disponible')
-            }
-
-          }
-        }
-      )
+   
   };
 
 

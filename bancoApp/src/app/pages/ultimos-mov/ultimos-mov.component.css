@@ -7,6 +7,10 @@
 .p-card .p-card-title {
     text-align: center;
 }
+#pdf {
+    background-color: var(--surface-b);
+    color: var(--text-color);
+}
 
 .movimientos {
     display: flex;

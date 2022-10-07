@@ -1,8 +1,10 @@
 export interface Usuario {
-    id:              number;
-    password:        string;
-    nombre:          string;
-    direccion:       string;
-    numTarjeta:      number;
-    saldoDisponible: string;
+    email:        string;
+    password:     string;
+    id:           number;
+    fullName:     string;
+    address:      string;
+    cardNumber:   string;
+    balance:      string;
+    currencyCode: string;
 }

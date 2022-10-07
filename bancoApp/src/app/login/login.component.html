@@ -4,15 +4,15 @@
         <form (ngSubmit)="guardar()" autocomplete="off" [formGroup]="miFormulario">
             <div class="p-card-content">
                 <div>
-                    <h5>Id:</h5>
-                    <input  formControlName="id"
-                            maxlength="19"
+                    <h5>Correo Electronico:</h5>
+                    <input  formControlName="email"
+                            maxlength="25"
                             class="inputs" 
-                            type="text" 
+                            type="email" 
                             pInputText> 
                     <br>
-                    <span *ngIf="campoValido('id')">
-                        id incorrecto
+                    <span *ngIf="campoValido('email')">
+                        Ponga un correo valido.
                     </span>
                 </div>
                 <div>
@@ -29,6 +29,7 @@
                 </div>
 
                 <button
+                    (click)="logout()"
                     pButton 
                     pRipple 
                     type="submit"
